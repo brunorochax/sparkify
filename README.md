@@ -79,3 +79,7 @@ Now, we need to import all data with the etl script:
 > python etl.py
 
 In a few seconds all data will be imported and ready to use.
+
+## Authors
+
+This project and data were create and provisioned by udacity.com on Data Engineering Nanodegree.
