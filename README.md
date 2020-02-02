@@ -82,4 +82,4 @@ In a few seconds all data will be imported and ready to use.
 
 ## Authors
 
-This project and data were create and provisioned by udacity.com on Data Engineering Nanodegree.
+This project and data were created and provisioned by udacity.com on Data Engineering Nanodegree.
