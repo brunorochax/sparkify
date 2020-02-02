@@ -1,7 +1,5 @@
 # Sparkify Analytics Project
 
-___
-
 On Sparkify, we had a challenge in our data team and needed to build an environment to provide faster analises.
 Our analysts were interested in understanding what songs users are listening to and with this, providing a recommendation program 
 and suggest songs according to the musical type most heard.
@@ -14,13 +12,9 @@ Also they can use tools like power bi and tableau to create dashboards and repor
 
 ## Getting Started
 
-___
-
 These instructions will help you to execute our ETL pipeline and prepare database with all needed data.
 
 ## Prerequisites
-
-___
 
 Our environment is using Python and Postgres, you can download both on links above:
 
@@ -30,8 +24,6 @@ Our environment is using Python and Postgres, you can download both on links abo
 We suppose that you are familiar with python and postgres and can configure both alone.
 
 ## Files
-
-___
 
 To build this environment, we need to work with two datasets:
 
@@ -44,8 +36,6 @@ They are published on data folder:
 * data/log_data/
 
 ## Scripts
-
-___
 
 We have just two scripts to run:
 
@@ -79,8 +69,6 @@ The second script, will prepare and import all data with the follow functions:
 It will use some modules of **sql_queries.py** too.
 
 ## Running the Scripts
-
-___
 
 First we need to create our tables, then you need to execute the create tables script:
 
