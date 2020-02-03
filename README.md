@@ -47,17 +47,43 @@ drop (if already exists) and create all tables that you need to import song and 
 
 #### Fact Table
 1. **songplays** - records in log data associated with song plays i.e. records with page NextSong
-* songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+* songplay_id (primary key)
+* start_time (foreign key to time table)
+* user_id (foreign key to users table)
+* level
+* song_id (foreign key to songs table)
+* artist_id (foreign key to artists table)
+* session_id
+* location
+* user_agent
 
 #### Dimension Tables
 2. **users** - users in the app
-* user_id, first_name, last_name, gender, level
+* user_id (primary key)
+* first_name
+* last_name
+* gender
+* level
 3. **songs** - songs in music database
-* song_id, title, artist_id, year, duration
+* song_id (primary key)
+* title
+* artist_id (foreign key to artists table)
+* year
+* duration
 4. **artists** - artists in music database
-* artist_id, name, location, latitude, longitude
+* artist_id (primary key)
+* name
+* location
+* latitude
+* longitude
 5. **time** - timestamps of records in songplays broken down into specific units
-* start_time, hour, day, week, month, year, weekday
+* start_time (primary key)
+* hour
+* day
+* week
+* month
+* year
+* weekday
 
 The second script, will prepare and import all data with the follow functions:
 
