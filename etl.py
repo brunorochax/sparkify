@@ -1,3 +1,8 @@
+"""This is the ETL module.
+This module is responsible for read, prepare and import all files that you want,
+using the below functions and their respective parameters.
+"""
+
 import os
 import glob
 import psycopg2
@@ -6,6 +11,16 @@ from sql_queries import *
 
 
 def process_song_file(cur, filepath):
+    """This function will handle the song files.
+    
+    Args:
+        cur (psycopg2.extensions.cursor): The cursor from your connection with postgres
+        filepath (str): The reference from your files path
+        
+    Returns:
+        None
+    """
+    
     # open song file
     df = pd.read_json(filepath, lines=True)
 
@@ -19,6 +34,15 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """This function will handle the log files.
+    
+    Args:
+        cur (psycopg2.extensions.cursor): The cursor from your connection with postgres
+        filepath (str): The reference from your files path
+    Returns:
+        None
+    """
+    
     # open log file
     df = pd.read_json(filepath, lines=True, encoding='utf-8')
 
@@ -61,6 +85,17 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """This function will handle the data processing,
+    and describe the import progress on execution.
+    
+    Args:
+        cur (psycopg2.extensions.cursor): The cursor from your connection with postgres
+        conn (psycopg2.extensions.connection): The connection with postgres
+        filepath (str): The reference from your files path
+        func (obj): The function that you want to execute to handle with song or log files
+    Returns:
+        None
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):
@@ -80,6 +115,14 @@ def process_data(cur, conn, filepath, func):
 
 
 def main():
+    """This is the main function, will start with this module
+    and execute all another functions.
+    
+    Args:
+        None
+    Returns:
+        None
+    """
     conn = psycopg2.connect("host=127.0.0.1 dbname=sparkifydb user=student password=student")
     cur = conn.cursor()
 
