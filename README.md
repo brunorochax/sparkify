@@ -67,7 +67,7 @@ drop (if already exists) and create all tables that you need to import song and 
 3. **songs** - songs in music database
 * song_id (primary key)
 * title
-* artist_id (foreign key to artists table)
+* artist_id
 * year
 * duration
 4. **artists** - artists in music database
