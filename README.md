@@ -1,4 +1,4 @@
-# Sparkify Analytics Project
+# Sparkify Analytics - Udacity Project1
 
 On Sparkify, we had a challenge in our data team and needed to build an environment to provide faster analises.
 Our analysts were interested in understanding what songs users are listening to and with this, providing a recommendation program 
