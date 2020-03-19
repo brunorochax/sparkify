@@ -1,8 +1,8 @@
 # Sparkify Analytics - Udacity Project 1
 
 <p align="center">
-  <img width="330" height="150" src="postgresql-logo.png">
-</p><br>
+  <img width="330" height="200" src="postgresql-logo.png">
+</p>
 
 On Sparkify, we had a challenge in our data team and needed to build an environment to provide faster analises.
 Our analysts were interested in understanding what songs users are listening to and with this, providing a recommendation program 
