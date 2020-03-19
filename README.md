@@ -1,7 +1,7 @@
 # Sparkify Analytics - Udacity Project 1
 
 <p align="center">
-  <img width="460" height="300" src="postgresql-logo.png">
+  <img width="330" height="150" src="postgresql-logo.png">
 </p><br>
 
 On Sparkify, we had a challenge in our data team and needed to build an environment to provide faster analises.
