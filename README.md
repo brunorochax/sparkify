@@ -1,5 +1,7 @@
 # Sparkify Analytics - Udacity Project 1
 
+![Postgresql Logo](postgresql-logo.png)
+
 On Sparkify, we had a challenge in our data team and needed to build an environment to provide faster analises.
 Our analysts were interested in understanding what songs users are listening to and with this, providing a recommendation program 
 and suggest songs according to the musical type most heard.
